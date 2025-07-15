@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Skills Training Nepal - Blog | Latest Tech Insights & Career Tips</title>
+    <meta name="description" content="Stay updated with the latest IT trends, career advice, and tech insights from IT Skills Training Nepal. Expert tips for web development, digital marketing, and IT careers.">
+    <meta name="keywords" content="IT blog Nepal, tech career tips, web development blog, digital marketing tips, IT training blog, programming tutorials, career advice Nepal">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="IT Skills Training Nepal">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="IT Skills Training Nepal - Tech Blog & Career Insights">
+    <meta property="og:description" content="Latest IT trends, career advice, and tech insights from Nepal's leading IT training institute.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itskillsnepal.com/blogs.html">
+    <meta property="og:image" content="https://itskillsnepal.com/images/blog-og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IT Skills Training Nepal - Tech Blog">
+    <meta name="twitter:description" content="Latest IT trends and career insights from Nepal's leading IT training institute.">
+    <meta name="twitter:image" content="https://itskillsnepal.com/images/blog-twitter-image.jpg">
+    
+    <link rel="canonical" href="https://itskillsnepal.com/blogs.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Primary Colors */
+            --primary-color: #1e40af;
+            --primary-light: #3b82f6;
+            --primary-lighter: #60a5fa;
+            --primary-dark: #1e3a8a;
+            --primary-darker: #1d4ed8;
+            
+            /* Neon Colors */
+            --neon-blue: #00ffff;
+            --neon-pink: #023faf;
+            --neon-orange: #0a4c75;
+            --neon-green: #0066ff;
+            --neon-purple: #2a6f97;
+            
+            /* Secondary Colors */
+            --secondary-color: #0ea5e9;
+            --secondary-light: #38bdf8;
+            --secondary-dark: #0284c7;
+            
+            /* Accent Colors */
+            --accent-color: #06b6d4;
+            --accent-light: #22d3ee;
+            --accent-dark: #0891b2;
+            
+            /* Background Colors */
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-tertiary: #2a2a2a;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            
+            /* Text Colors */
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --text-dark: #1e293b;
+            
+            /* Border Colors */
+            --border-color: #334155;
+            --border-light: #475569;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            --gradient-secondary: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #22d3ee 100%);
+            --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+            --gradient-dark: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            --gradient-neon: linear-gradient(45deg, #00ffff, #0b27a7, #17e4ef, #06194b);
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+            --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+            --shadow-blue: 0 10px 30px rgba(30, 64, 175, 0.3);
+            --shadow-neon: 0 0 20px rgba(0, 255, 255, 0.5);
+            
+            /* Transitions */
+            --transition-ultrafast: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-normal: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-slow: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+       
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Utility Classes */
+        .gradient-text {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .neon-text {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue);
+            animation: neonFlicker 2s linear infinite;
+        }
+
+        @keyframes neonFlicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+               /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+            padding: 0.75rem 0;
+            transition: all var(--transition-smooth);
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 10, 10, 0.98);
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+            padding: 0.5rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all var(--transition-normal);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+            transition: width var(--transition-smooth);
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: var(--transition-fast);
+            border-radius: 2px;
+        }
+        /* Page Header */
+        .page-header {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: 
+                linear-gradient(135deg, rgba(10, 10, 10, 0.8) 0%, rgba(26, 26, 26, 0.8) 100%),
+                url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(30, 64, 175, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 20%, rgba(96, 165, 250, 0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(45deg, transparent, rgba(0, 255, 255, 0.1), transparent),
+                linear-gradient(-45deg, transparent, rgba(30, 64, 175, 0.1), transparent);
+            animation: shimmer 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+
+        .page-header .container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .page-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Blog Section */
+        .blog-section {
+            padding: 6rem 0;
+            background: var(--bg-primary);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .blog-card {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all var(--transition-smooth);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .blog-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform var(--transition-smooth);
+        }
+
+        .blog-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+            border-color: rgba(0, 255, 255, 0.3);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-smooth);
+        }
+
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+        }
+
+        .blog-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .blog-date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-author {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .blog-excerpt {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .blog-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .blog-tag {
+            background: rgba(0, 255, 255, 0.1);
+            color: var(--neon-blue);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            transition: all var(--transition-normal);
+        }
+ 
+        .blog-tag:hover {
+            background: rgba(0, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .read-more-btn {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+        }
+
+        .read-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+        }
+
+        /* Blog Modal */
+        .blog-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            overflow-y: auto;
+            backdrop-filter: blur(10px);
+        }
+
+        .blog-modal.active {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal-content {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem auto;
+            position: relative;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-header {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .modal-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            background: var(--neon-blue);
+            transform: scale(1.1);
+        }
+
+        .modal-category {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .modal-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .modal-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .modal-article {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .modal-article h2 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+            position: relative;
+        }
+
+        .modal-article h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--gradient-primary);
+        }
+
+        .modal-article h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .modal-article p {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-article ul, .modal-article ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .modal-article li {
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-article blockquote {
+            background: rgba(0, 255, 255, 0.1);
+            border-left: 4px solid var(--neon-blue);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+
+        .modal-article code {
+            background: rgba(42, 42, 42, 0.8);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--neon-blue);
+        }
+
+        .modal-article pre {
+            background: rgba(42, 42, 42, 0.8);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .modal-article pre code {
+            background: none;
+            padding: 0;
+        }
+
+  /* Footer */
+        .footer {
+            background: var(--bg-primary);
+            padding: 4rem 0 2rem;
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-normal);
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--neon-blue);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .footer-logo span {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .footer-section p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid var(--neon-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--neon-blue);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .social-links a:hover {
+            background: var(--neon-blue);
+            color: var(--bg-primary);
+            transform: translateY(-2px);
+        }
+
+        .footer-contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .footer-contact-item i {
+            color: var(--neon-blue);
+            width: 20px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-normal);
+        }
+
+        .footer-links a:hover {
+            color: var(--neon-blue);
+        }
+
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid var(--neon-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--neon-blue);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .social-links a:hover {
+            background: var(--neon-blue);
+            color: var(--bg-primary);
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-item i {
+            color: var(--neon-blue);
+            width: 20px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-normal);
+        }
+
+        .footer-links a:hover {
+            color: var(--neon-blue);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(10, 10, 10, 0.98);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 2rem;
+                transition: left var(--transition-smooth);
+                backdrop-filter: blur(20px);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+            .page-header {
+                height: 50vh;
+                background-attachment: scroll;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .page-subtitle {
+                font-size: 1rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .blog-card {
+                margin: 0 1rem;
+            }
+
+            .modal-content {
+                margin: 1rem;
+                border-radius: 12px;
+            }
+
+            .modal-header {
+                height: 250px;
+            }
+
+            .modal-body {
+                padding: 1.5rem;
+            }
+
+            .modal-title {
+                font-size: 1.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .page-title {
+                font-size: 1.5rem;
+            }
+
+            .page-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .blog-section {
+                padding: 3rem 0;
+            }
+
+            .blog-card {
+                margin: 0;
+            }
+
+            .blog-content {
+                padding: 1.5rem;
+            }
+
+            .blog-title {
+                font-size: 1.3rem;
+            }
+
+            .modal-content {
+                margin: 0.5rem;
+            }
+
+            .modal-body {
+                padding: 1rem;
+            }
+
+            .modal-article {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading Blogs...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="../itskillspro/images/logoIT (1).png" alt="IT Skills Nepal">
+                <span>IT Skills Training Nepal</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="blogs.html" class="nav-link active">Blogs</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Tech <span class="gradient-text">Insights</span> & <span class="neon-text">Blogs</span></h1>
+            <p class="page-subtitle">Stay updated with the latest trends, tips, and insights from the world of technology and IT careers</p>
+        </div>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <article class="blog-card" data-blog="1">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Development Trends 2024">
+                        <div class="blog-category">Web Development</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 15, 2024</span>
+                            </div>
+                            <div class="blog-author">
+                                <i class="fas fa-user"></i>
+                                <span>Raj Sharma</span>
+                            </div>
+                        </div>
+                        <h2 class="blog-title">Top Web Development Trends to Watch in 2024</h2>
+                        <p class="blog-excerpt">Discover the latest web development trends that are shaping the future of digital experiences. From AI integration to progressive web apps, learn what technologies you should master.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">React</span>
+                            <span class="blog-tag">JavaScript</span>
+                            <span class="blog-tag">AI</span>
+                            <span class="blog-tag">PWA</span>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card" data-blog="2">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Marketing Strategies">
+                        <div class="blog-category">Digital Marketing</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 10, 2024</span>
+                            </div>
+                            <div class="blog-author">
+                                <i class="fas fa-user"></i>
+                                <span>Priya Patel</span>
+                            </div>
+                        </div>
+                        <h2 class="blog-title">Digital Marketing Strategies for Small Businesses in Nepal</h2>
+                        <p class="blog-excerpt">Learn effective digital marketing strategies tailored for small businesses in Nepal. From social media marketing to SEO, discover how to grow your online presence.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">SEO</span>
+                            <span class="blog-tag">Social Media</span>
+                            <span class="blog-tag">Content Marketing</span>
+                            <span class="blog-tag">Nepal</span>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card" data-blog="3">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Career in IT">
+                        <div class="blog-category">Career</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 5, 2024</span>
+                            </div>
+                            <div class="blog-author">
+                                <i class="fas fa-user"></i>
+                                <span>Amit Thapa</span>
+                            </div>
+                        </div>
+                        <h2 class="blog-title">Building a Successful Career in IT: A Complete Guide</h2>
+                        <p class="blog-excerpt">Your roadmap to a successful IT career in Nepal. Learn about the most in-demand skills, career paths, and how to stand out in the competitive tech industry.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Career</span>
+                            <span class="blog-tag">IT Skills</span>
+                            <span class="blog-tag">Programming</span>
+                            <span class="blog-tag">Growth</span>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Blog 4 -->
+                <article class="blog-card" data-blog="4">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Science">
+                        <div class="blog-category">Data Science</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Nov 30, 2024</span>
+                            </div>
+                            <div class="blog-author">
+                                <i class="fas fa-user"></i>
+                                <span>Sita Adhikari</span>
+                            </div>
+                        </div>
+                        <h2 class="blog-title">Introduction to Data Science: Getting Started with Python</h2>
+                        <p class="blog-excerpt">Begin your data science journey with Python. Learn the fundamentals of data analysis, visualization, and machine learning in this comprehensive beginner's guide.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Python</span>
+                            <span class="blog-tag">Data Science</span>
+                            <span class="blog-tag">Machine Learning</span>
+                            <span class="blog-tag">Analytics</span>
+                        </div>
+                        <button class="read-more-btn">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Modal -->
+    <div class="blog-modal" id="blogModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img id="modal-image" src="" alt="">
+                <button class="modal-close">&times;</button>
+                <div class="modal-category" id="modal-category"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <div class="blog-date">
+                        <i class="fas fa-calendar"></i>
+                        <span id="modal-date"></span>
+                    </div>
+                    <div class="blog-author">
+                        <i class="fas fa-user"></i>
+                        <span id="modal-author"></span>
+                    </div>
+                </div>
+                <h1 class="modal-title" id="modal-title"></h1>
+                <div class="modal-tags" id="modal-tags"></div>
+                <div class="modal-article" id="modal-article"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../itskillspro/images/logoIT (1).png" alt="IT Skills Nepal">
+                        <span>IT Skills Training Nepal</span>
+                    </div>
+                    <p>Empowering Nepal's next generation of IT professionals with cutting-edge skills and industry-relevant training.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61577167217823" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/itskillstrainingnepal.official/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        
+                        <a href="https://www.tiktok.com/@itskillstrainingnepal" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Courses</h3>
+                    <ul>
+                         <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Python Programming</a></li>
+                        <li><a href="courses.html">Java Programming with Data Science</a></li>
+                        <li><a href="courses.html">Digital Maketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Putalisadak-29, Kathmandu</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>9709083854</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>itskillstrainingnepal@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 IT Skills Training Nepal. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Blog data
+        const blogData = {
+            1: {
+                title: "Top Web Development Trends to Watch in 2024",
+                image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "Web Development",
+                date: "Dec 15, 2024",
+                author: "Raj Sharma",
+                tags: ["React", "JavaScript", "AI", "PWA"],
+                content: `
+                    <h2>The Future of Web Development</h2>
+                    <p>Web development continues to evolve at a rapid pace, with new technologies and frameworks emerging constantly. As we move into 2024, several key trends are shaping the landscape of web development.</p>
+                    
+                    <h3>1. AI-Powered Development Tools</h3>
+                    <p>Artificial Intelligence is revolutionizing how developers write code. AI-powered tools like GitHub Copilot and ChatGPT are helping developers write cleaner, more efficient code faster than ever before.</p>
+                    
+                    <h3>2. Progressive Web Apps (PWAs)</h3>
+                    <p>PWAs continue to gain popularity as they offer native app-like experiences through web browsers. They provide offline functionality, push notifications, and fast loading times.</p>
+                    
+                    <h3>3. Jamstack Architecture</h3>
+                    <p>The Jamstack approach is becoming more mainstream, offering better performance, security, and scalability for modern web applications.</p>
+                    
+                    <h3>4. WebAssembly (WASM)</h3>
+                    <p>WebAssembly is enabling high-performance applications to run in browsers, opening up new possibilities for web-based software.</p>
+                    
+                    <blockquote>
+                        "The future of web development lies in creating more efficient, accessible, and user-friendly applications that work seamlessly across all devices."
+                    </blockquote>
+                    
+                    <h3>Conclusion</h3>
+                    <p>Staying updated with these trends is crucial for web developers who want to remain competitive in the ever-changing tech landscape. Focus on learning these technologies to future-proof your career.</p>
+                `
+            },
+            2: {
+                title: "Digital Marketing Strategies for Small Businesses in Nepal",
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "Digital Marketing",
+                date: "Dec 10, 2024",
+                author: "Priya Patel",
+                tags: ["SEO", "Social Media", "Content Marketing", "Nepal"],
+                content: `
+                    <h2>Growing Your Business Online in Nepal</h2>
+                    <p>Digital marketing has become essential for small businesses in Nepal to reach their target audience and compete in the modern marketplace. Here's a comprehensive guide to effective digital marketing strategies.</p>
+                    
+                    <h3>1. Search Engine Optimization (SEO)</h3>
+                    <p>SEO is crucial for improving your website's visibility in search results. Focus on local SEO by optimizing for Nepal-specific keywords and creating content that resonates with local audiences.</p>
+                    
+                    <h3>2. Social Media Marketing</h3>
+                    <p>Facebook and Instagram are particularly popular in Nepal. Create engaging content that showcases your products or services and builds relationships with your customers.</p>
+                    
+                    <h3>3. Content Marketing</h3>
+                    <p>Create valuable, informative content that addresses your customers' needs. Blog posts, videos, and infographics can help establish your business as an authority in your industry.</p>
+                    
+                    <h3>4. Email Marketing</h3>
+                    <p>Build an email list and send regular newsletters to keep your customers informed about new products, services, and promotions.</p>
+                    
+                    <h3>5. Google My Business</h3>
+                    <p>Claim and optimize your Google My Business listing to appear in local search results and Google Maps.</p>
+                    
+                    <blockquote>
+                        "Digital marketing is not just about having an online presence; it's about creating meaningful connections with your customers."
+                    </blockquote>
+                    
+                    <h3>Measuring Success</h3>
+                    <p>Use tools like Google Analytics and social media insights to track your marketing performance and adjust your strategies accordingly.</p>
+                `
+            },
+            3: {
+                title: "Building a Successful Career in IT: A Complete Guide",
+                image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "Career",
+                date: "Dec 5, 2024",
+                author: "Amit Thapa",
+                tags: ["Career", "IT Skills", "Programming", "Growth"],
+                content: `
+                    <h2>Your Path to IT Success</h2>
+                    <p>The Information Technology sector offers numerous opportunities for career growth and financial stability. Here's your complete guide to building a successful IT career in Nepal.</p>
+                    
+                    <h3>1. Choose Your Specialization</h3>
+                    <p>IT is a broad field with many specializations:</p>
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Web Development</li>
+                        <li>Data Science</li>
+                        <li>Cybersecurity</li>
+                        <li>Network Administration</li>
+                        <li>Digital Marketing</li>
+                    </ul>
+                    
+                    <h3>2. Develop Essential Skills</h3>
+                    <p>Focus on both technical and soft skills:</p>
+                    <ul>
+                        <li>Programming languages (Python, JavaScript, Java)</li>
+                        <li>Problem-solving abilities</li>
+                        <li>Communication skills</li>
+                        <li>Continuous learning mindset</li>
+                    </ul>
+                    
+                    <h3>3. Build a Strong Portfolio</h3>
+                    <p>Create projects that demonstrate your skills and host them on platforms like GitHub. A strong portfolio is often more valuable than a degree.</p>
+                    
+                    <h3>4. Networking and Community</h3>
+                    <p>Join tech communities, attend meetups, and connect with other professionals in your field. Networking can lead to job opportunities and collaborations.</p>
+                    
+                    <h3>5. Stay Updated</h3>
+                    <p>Technology evolves rapidly. Stay current with industry trends through online courses, blogs, and tech news.</p>
+                    
+                    <blockquote>
+                        "Success in IT is not just about technical skills; it's about adaptability, continuous learning, and problem-solving."
+                    </blockquote>
+                    
+                    <h3>Career Progression</h3>
+                    <p>Start with entry-level positions and gradually take on more responsibilities. Consider specializing in emerging technologies like AI and machine learning for better career prospects.</p>
+                `
+            },
+            4: {
+                title: "Introduction to Data Science: Getting Started with Python",
+                image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "Data Science",
+                date: "Nov 30, 2024",
+                author: "Sita Adhikari",
+                tags: ["Python", "Data Science", "Machine Learning", "Analytics"],
+                content: `
+                    <h2>Your Journey into Data Science</h2>
+                    <p>Data Science is one of the most exciting and rapidly growing fields in technology. With Python as your primary tool, you can unlock insights from data and build intelligent systems.</p>
+                    
+                    <h3>Why Python for Data Science?</h3>
+                    <p>Python is the preferred language for data science due to its:</p>
+                    <ul>
+                        <li>Simple and readable syntax</li>
+                        <li>Extensive libraries for data manipulation</li>
+                        <li>Strong community support</li>
+                        <li>Versatility across different domains</li>
+                    </ul>
+                    
+                    <h3>Essential Python Libraries</h3>
+                    <p>Master these key libraries:</p>
+                    <ul>
+                        <li><strong>NumPy:</strong> Numerical computations</li>
+                        <li><strong>Pandas:</strong> Data manipulation and analysis</li>
+                        <li><strong>Matplotlib/Seaborn:</strong> Data visualization</li>
+                        <li><strong>Scikit-learn:</strong> Machine learning</li>
+                        <li><strong>Jupyter:</strong> Interactive development environment</li>
+                    </ul>
+                    
+                    <h3>Data Science Process</h3>
+                    <p>Follow this systematic approach:</p>
+                    <ol>
+                        <li><strong>Data Collection:</strong> Gather relevant data from various sources</li>
+                        <li><strong>Data Cleaning:</strong> Handle missing values and outliers</li>
+                        <li><strong>Exploratory Data Analysis:</strong> Understand data patterns</li>
+                        <li><strong>Feature Engineering:</strong> Create meaningful features</li>
+                        <li><strong>Model Building:</strong> Apply machine learning algorithms</li>
+                        <li><strong>Evaluation:</strong> Assess model performance</li>
+                    </ol>
+                    
+                    <h3>Getting Started</h3>
+                    <p>Begin with simple projects like analyzing sales data or predicting house prices. Practice with datasets from Kaggle or UCI Machine Learning Repository.</p>
+                    
+                    <pre><code>import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load data
+data = pd.read_csv('your_data.csv')
+
+# Basic analysis
+print(data.head())
+print(data.describe())
+                    </code></pre>
+                    
+                    <blockquote>
+                        "Data science is not just about algorithms; it's about asking the right questions and finding meaningful insights in data."
+                    </blockquote>
+                    
+                    <h3>Career Opportunities</h3>
+                    <p>Data science offers various career paths including Data Analyst, Data Scientist, Machine Learning Engineer, and Business Intelligence Analyst.</p>
+                `
+            }
+        };
+
+        // DOM elements
+        const blogModal = document.getElementById('blogModal');
+        const blogCards = document.querySelectorAll('.blog-card');
+        const modalClose = document.querySelector('.modal-close');
+        const backToTop = document.getElementById('backToTop');
+        const navbar = document.querySelector('.navbar');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const loadingScreen = document.getElementById('loading-screen');
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide loading screen
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                loadingScreen.style.visibility = 'hidden';
+            }, 1500);
+
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Add click event listeners to blog cards
+            blogCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const blogId = this.dataset.blog;
+                    openBlogModal(blogId);
+                });
+            });
+
+            // Close modal event listeners
+            modalClose.addEventListener('click', closeBlogModal);
+            blogModal.addEventListener('click', function(e) {
+                if (e.target === blogModal) {
+                    closeBlogModal();
+                }
+            });
+
+            // Back to top button
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Mobile navigation toggle
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+        });
+
+        // Handle scroll events
+        function handleScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Navbar scroll effect
+            if (scrollTop > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Back to top button visibility
+            if (scrollTop > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }
+
+        // Open blog modal
+        function openBlogModal(blogId) {
+            const blog = blogData[blogId];
+            if (!blog) return;
+
+            // Populate modal content
+            document.getElementById('modal-image').src = blog.image;
+            document.getElementById('modal-category').textContent = blog.category;
+            document.getElementById('modal-date').textContent = blog.date;
+            document.getElementById('modal-author').textContent = blog.author;
+            document.getElementById('modal-title').textContent = blog.title;
+            document.getElementById('modal-article').innerHTML = blog.content;
+
+            // Populate tags
+            const tagsContainer = document.getElementById('modal-tags');
+            tagsContainer.innerHTML = '';
+            blog.tags.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.className = 'blog-tag';
+                tagElement.textContent = tag;
+                tagsContainer.appendChild(tagElement);
+            });
+
+            // Show modal
+            blogModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close blog modal
+        function closeBlogModal() {
+            blogModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && blogModal.classList.contains('active')) {
+                closeBlogModal();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation to read more buttons
+        document.querySelectorAll('.read-more-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const originalText = this.innerHTML;
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                }, 500);
+            });
+        });
+
+        // Intersection Observer for animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe blog cards for animation
+        blogCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+
+        // Add parallax effect to header
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const header = document.querySelector('.page-header');
+            if (header) {
+                header.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add search functionality (if needed)
+        function searchBlogs(query) {
+            const cards = document.querySelectorAll('.blog-card');
+            cards.forEach(card => {
+                const title = card.querySelector('.blog-title').textContent.toLowerCase();
+                const excerpt = card.querySelector('.blog-excerpt').textContent.toLowerCase();
+                const tags = Array.from(card.querySelectorAll('.blog-tag')).map(tag => tag.textContent.toLowerCase());
+                
+                const matches = title.includes(query.toLowerCase()) || 
+                              excerpt.includes(query.toLowerCase()) ||
+                              tags.some(tag => tag.includes(query.toLowerCase()));
+                
+                card.style.display = matches ? 'block' : 'none';
+            });
+        }
+
+        // Add copy link functionality
+        function copyBlogLink(blogId) {
+            const url = `${window.location.origin}${window.location.pathname}?blog=${blogId}`;
+            navigator.clipboard.writeText(url).then(() => {
+                // Show success message
+                const toast = document.createElement('div');
+                toast.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: var(--neon-blue);
+                    color: white;
+                    padding: 1rem 2rem;
+                    border-radius: 8px;
+                    z-index: 10001;
+                    font-weight: 600;
+                    opacity: 0;
+                    transform: translateY(-20px);
+                    transition: all 0.3s ease;
+                `;
+                toast.textContent = 'Link copied to clipboard!';
+                document.body.appendChild(toast);
+                
+                setTimeout(() => {
+                    toast.style.opacity = '1';
+                    toast.style.transform = 'translateY(0)';
+                }, 100);
+                
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    toast.style.transform = 'translateY(-20px)';
+                    setTimeout(() => {
+                        document.body.removeChild(toast);
+                    }, 300);
+                }, 3000);
+            });
+        }
+
+        // Handle URL parameters for direct blog access
+        const urlParams = new URLSearchParams(window.location.search);
+        const blogParam = urlParams.get('blog');
+        if (blogParam && blogData[blogParam]) {
+            setTimeout(() => {
+                openBlogModal(blogParam);
+            }, 2000);
+        }
+
+        // Add social sharing functionality
+        function shareBlog(blogId, platform) {
+            const blog = blogData[blogId];
+            if (!blog) return;
+
+            const url = `${window.location.origin}${window.location.pathname}?blog=${blogId}`;
+            const text = `Check out this blog: ${blog.title}`;
+            
+            let shareUrl = '';
+            switch(platform) {
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+                    break;
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+                    break;
+                default:
+                    return;
+            }
+            
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+        }
+
+        // Performance optimization: Lazy load images
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+
+        // Add reading time estimation
+        function estimateReadingTime(content) {
+            const wordsPerMinute = 200;
+            const words = content.trim().split(/\s+/).length;
+            const minutes = Math.ceil(words / wordsPerMinute);
+            return minutes;
+        }
+
+        // Add reading progress indicator for modal
+        function updateReadingProgress() {
+            const article = document.getElementById('modal-article');
+            const scrollTop = article.scrollTop;
+            const scrollHeight = article.scrollHeight - article.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            
+            const progressBar = document.querySelector('.reading-progress');
+            if (progressBar) {
+                progressBar.style.width = `${progress}%`;
+            }
+        }
+
+        // Initialize all features
+        function initializePage() {
+            // Add any additional initialization code here
+            console.log('Blog page initialized successfully');
+        }
+
+        // Call initialization
+        initializePage();
+    </script>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>

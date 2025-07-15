@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IT Skills Training Nepal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Primary Colors */
+            --primary-color: #1e40af;
+            --primary-light: #3b82f6;
+            --primary-lighter: #60a5fa;
+            --primary-dark: #1e3a8a;
+            --primary-darker: #1d4ed8;
+            
+            /* Neon Colors */
+            --neon-blue: #00ffff;
+            --neon-pink: #023faf;
+            --neon-orange: #0a4c75;
+            --neon-green: #0066ff;
+            --neon-purple: #2a6f97;
+            
+            /* Secondary Colors */
+            --secondary-color: #0ea5e9;
+            --secondary-light: #38bdf8;
+            --secondary-dark: #0284c7;
+            
+            /* Accent Colors */
+            --accent-color: #06b6d4;
+            --accent-light: #22d3ee;
+            --accent-dark: #0891b2;
+            
+            /* Background Colors */
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-tertiary: #2a2a2a;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            
+            /* Text Colors */
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --text-dark: #1e293b;
+            
+            /* Border Colors */
+            --border-color: #334155;
+            --border-light: #475569;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            --gradient-secondary: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #22d3ee 100%);
+            --gradient-accent: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+            --gradient-dark: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            --gradient-neon: linear-gradient(45deg, #00ffff, #0b27a7, #17e4ef, #06194b);
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+            --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+            --shadow-blue: 0 10px 30px rgba(30, 64, 175, 0.3);
+            --shadow-neon: 0 0 20px rgba(0, 255, 255, 0.5);
+            
+            /* Transitions */
+            --transition-ultrafast: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-fast: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-normal: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-slow: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Utility Classes */
+        .gradient-text {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .neon-text {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue);
+            animation: neonFlicker 2s linear infinite;
+        }
+
+        @keyframes neonFlicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+            padding: 0.75rem 0;
+            transition: all var(--transition-smooth);
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 10, 10, 0.98);
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
+            padding: 0.5rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo:hover {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all var(--transition-normal);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink));
+            transition: width var(--transition-smooth);
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: var(--transition-fast);
+            border-radius: 2px;
+        }
+
+        /* Page Header */
+        .page-header {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: 
+                linear-gradient(135deg, rgba(10, 10, 10, 0.8) 0%, rgba(26, 26, 26, 0.8) 100%),
+                url('https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(0, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(30, 64, 175, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 20%, rgba(96, 165, 250, 0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(45deg, transparent, rgba(0, 255, 255, 0.1), transparent),
+                linear-gradient(-45deg, transparent, rgba(30, 64, 175, 0.1), transparent);
+            animation: shimmer 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+
+        .page-header .container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .page-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 6rem 0;
+            background: var(--bg-primary);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            position: relative;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .contact-info h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: rgba(26, 26, 26, 0.8);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all var(--transition-smooth);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 255, 255, 0.2);
+            border-color: rgba(0, 255, 255, 0.3);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+        }
+
+        .contact-text h3 {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-text p {
+            color: var(--text-secondary);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: rgba(26, 26, 26, 0.9);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(0, 255, 255, 0.05), transparent);
+            transform: translateX(-100%);
+            transition: transform var(--transition-smooth);
+        }
+
+        .contact-form:hover::before {
+            transform: translateX(100%);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(42, 42, 42, 0.8);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all var(--transition-normal);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform var(--transition-smooth);
+        }
+
+        .submit-btn:hover::before {
+            transform: translateX(100%);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(30, 64, 175, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Success/Error Messages */
+        .message {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .message.success {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #22c55e;
+        }
+
+        .message.error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+        }
+
+        .message.show {
+            display: flex;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 6rem 0;
+            background: var(--bg-secondary);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.1);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 6rem 0;
+            background: var(--bg-primary);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            overflow: hidden;
+            transition: all var(--transition-smooth);
+        }
+
+        .faq-item:hover {
+            border-color: rgba(0, 255, 255, 0.3);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all var(--transition-normal);
+        }
+
+        .faq-question:hover {
+            color: var(--neon-blue);
+        }
+
+        .faq-icon {
+            transition: transform var(--transition-normal);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all var(--transition-smooth);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .faq-answer p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-primary);
+            padding: 4rem 0 2rem;
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-normal);
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--neon-blue);
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-logo span {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .footer-section p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid var(--neon-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--neon-blue);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .social-links a:hover {
+            background: var(--neon-blue);
+            color: var(--bg-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Footer Contact Info - Simplified without boxes */
+        .footer .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-secondary);
+            padding: 0;
+            background: none;
+            border: none;
+            border-radius: 0;
+            transition: color var(--transition-normal);
+        }
+
+        .footer .contact-item:hover {
+            color: var(--neon-blue);
+            transform: none;
+            box-shadow: none;
+            border-color: transparent;
+        }
+
+        .footer .contact-item i {
+            color: var(--neon-blue);
+            width: 20px;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .footer .contact-item span {
+            color: var(--text-secondary);
+            transition: color var(--transition-normal);
+        }
+
+        .footer .contact-item:hover span {
+            color: var(--neon-blue);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 2rem;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-normal);
+        }
+
+        .footer-links a:hover {
+            color: var(--neon-blue);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all var(--transition-smooth);
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+        }
+
+        .back-to-top:active {
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 2rem 0;
+                gap: 1rem;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all var(--transition-smooth);
+                border-top: 1px solid rgba(0, 255, 255, 0.2);
+            }
+
+            .nav-menu.active {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .nav-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .page-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info h2 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .contact-item {
+                padding: 1rem;
+            }
+
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+
+            .back-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <img src="images/logoIT (1).png" alt="IT Skills Nepal Logo" class="logo-img">
+            <span>IT Skills Nepal</span>
+        </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="courses.html" class="nav-link">Courses</a></li>
+                <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">Ready to start your IT journey? We're here to help you every step of the way. Contact us today!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>We're committed to providing the best IT education in Nepal. Whether you're a beginner or looking to advance your skills, our expert instructors are here to guide you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Address</h3>
+                                <p>Putalisadak-29, Kathmandu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>9709083854</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>itskillstrainingnepal@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Office Hours</h3>
+                                <p>Sun - Fri: 10:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <div class="message" id="message"></div>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="course-inquiry">Course Inquiry</option>
+                                <option value="enrollment">Enrollment</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="messageText" name="message" placeholder="Tell us about your IT goals and how we can help you achieve them..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Map Section -->
+<section class="map-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">Located in the heart of Kathmandu, we're easily accessible for all your IT training needs.</p>
+        </div>
+        <div class="map-container">
+            <!-- Fixed Google Maps Embed URL -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1234567890!2d85.3196016!3d27.7026706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a8666f3dc9%3A0xb62aba3c6e4da450!2sWi%20Education%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1710000000000!5m2!1sen!2snp"
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Got questions? We've got answers. Here are some common questions about our IT training programs.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What courses do you offer?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive IT training courses including Web Development, Mobile App Development, Data Science, Digital Marketing, Cybersecurity, and Java Programming. All courses are designed to meet industry standards and current market demands.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide certification?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide industry-recognized certifications upon successful completion of our courses. Our certificates are valued by employers and can help boost your career prospects in the IT industry.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the class timings?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer flexible class timings to accommodate different schedules. Morning classes run from 9:00 AM to 12:00 PM, afternoon classes from 1:00 PM to 4:00 PM, and evening classes from 5:00 PM to 8:00 PM. Weekend batches are also available.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the fee structure?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our fee structure varies depending on the course duration and complexity. We offer competitive pricing with flexible payment options including installments. Contact us for detailed fee information for specific courses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../itskillspro/images/logoIT (1).png" alt="IT Skills Training Nepal Logo">
+                        <span>IT Skills Training Nepal</span>
+                    </div>
+                    <p>Empowering careers through technology education. Your gateway to the future of IT.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61577167217823"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@itskillstrainingnepal"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/itskillstrainingnepal.official/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Courses</h3>
+                    <ul>
+                        <li><a href="courses.html">Web Development</a></li>
+                        <li><a href="courses.html">Python Programming</a></li>
+                        <li><a href="courses.html">Java Programming with Data Science</a></li>
+                        <li><a href="courses.html">Digital Maketing</a></li>
+                    </ul>
+                </div>
+              <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Putalisadak-29, Kathmandu</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>9709083854</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>itskillstrainingnepal@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 IT Skills Training Nepal. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+       // Combined JavaScript for IT Skills Training Nepal Website
+
+// Loading Screen
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    setTimeout(() => {
+        loadingScreen.style.opacity = '0';
+        loadingScreen.style.visibility = 'hidden';
+    }, 1500);
+});
+
+// Mobile Navigation
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+navToggle.addEventListener('click', function() {
+    navToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Enhanced Contact Form with Backend Integration
+const contactForm = document.getElementById('contactForm');
+const messageDiv = document.getElementById('message');
+const submitBtn = document.querySelector('.submit-btn');
+
+// Backend URL - Update this to match your server
+const BACKEND_URL = 'http://localhost:5000/api/contact';
+
+contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Validate form before submission
+    if (!validateForm()) {
+        showMessage('Please fill in all required fields correctly.', 'error');
+        return;
+    }
+    
+    // Disable submit button and show loading
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    
+    try {
+        const formData = new FormData(contactForm);
+        const data = {
+            firstName: formData.get('firstName'),
+            lastName: formData.get('lastName'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            subject: formData.get('subject'),
+            message: formData.get('message')
+        };
+        
+        const response = await fetch(BACKEND_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            showMessage(result.message, 'success');
+            contactForm.reset();
+        } else {
+            showMessage(result.message, 'error');
+        }
+        
+    } catch (error) {
+        console.error('Error:', error);
+        
+        // Fallback to mailto if backend is unavailable
+        const firstName = formData.get('firstName');
+        const lastName = formData.get('lastName');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const subject = formData.get('subject');
+        const message = formData.get('message');
+
+        const mailtoLink = `mailto:itskillstrainingnepal@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            `Name: ${firstName} ${lastName}\n` +
+            `Email: ${email}\n` +
+            `Phone: ${phone}\n\n` +
+            `Message:\n${message}`
+        )}`;
+
+        window.location.href = mailtoLink;
+        showMessage('Backend unavailable. Opening email client as fallback.', 'success');
+        contactForm.reset();
+        
+    } finally {
+        // Re-enable submit button
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    }
+});
+
+function showMessage(text, type) {
+    messageDiv.innerHTML = `<i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-triangle'}"></i> ${text}`;
+    messageDiv.className = `message ${type} show`;
+    
+    // Auto-hide message after 5 seconds
+    setTimeout(() => {
+        messageDiv.classList.remove('show');
+    }, 5000);
+}
+
+// Real-time form validation
+const inputs = document.querySelectorAll('input, textarea, select');
+inputs.forEach(input => {
+    input.addEventListener('blur', function() {
+        validateField(this);
+    });
+    
+    input.addEventListener('input', function() {
+        // Clear error state when user starts typing
+        if (this.style.borderColor === 'rgb(239, 68, 68)') {
+            this.style.borderColor = 'rgba(0, 255, 255, 0.1)';
+        }
+    });
+});
+
+function validateField(field) {
+    const value = field.value.trim();
+    let isValid = true;
+    
+    // Required field validation
+    if (field.hasAttribute('required') && !value) {
+        isValid = false;
+    }
+    
+    // Email validation
+    if (field.type === 'email' && value && !isValidEmail(value)) {
+        isValid = false;
+    }
+    
+    // Phone validation (basic)
+    if (field.type === 'tel' && value && !isValidPhone(value)) {
+        isValid = false;
+    }
+    
+    // Update field styling
+    field.style.borderColor = isValid ? 'rgba(0, 255, 255, 0.1)' : '#ef4444';
+    
+    return isValid;
+}
+
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidPhone(phone) {
+    // Remove all non-digit characters
+    const cleanPhone = phone.replace(/\D/g, '');
+    return cleanPhone.length >= 10;
+}
+
+// Form submission validation
+function validateForm() {
+    let isValid = true;
+    
+    inputs.forEach(input => {
+        if (!validateField(input)) {
+            isValid = false;
+        }
+    });
+    
+    return isValid;
+}
+
+// FAQ Accordion
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all FAQ items
+        faqItems.forEach(faqItem => {
+            faqItem.classList.remove('active');
+        });
+        
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
+// Back to Top Button
+const backToTopBtn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 500) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Intersection Observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe elements for animation
+document.querySelectorAll('.contact-item, .faq-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+
+// Add loading state styles dynamically
+const style = document.createElement('style');
+style.textContent = `
+    .submit-btn:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        transform: none !important;
+    }
+    
+    .submit-btn:disabled:hover {
+        transform: none !important;
+        box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3) !important;
+    }
+    
+    .fa-spinner {
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+`;
+document.head.appendChild(style);
+    </script>
+</body>
+</html>
